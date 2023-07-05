@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Welcome to Raspberry Pi</title>
+  <style>
+    body {
+      background-color: #F4C095;
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+
+    .header {
+      background-color: #bc7b46;
+      color: white;
+      padding: 20px;
+    }
+
+    .header-content {
+      display: flex;
+      align-items: center;
+    }
+
+    .header-logo {
+      display: inline-block;
+      vertical-align: middle;
+      margin-right: 10px;
+      height: 40px;
+    }
+
+    .header-text {
+      display: inline-block;
+      vertical-align: middle;
+      font-size: 18px;
+      font-weight: bold;
+    }
+
+    .header-icon {
+      display: inline-block;
+      vertical-align: middle;
+      margin-left: 20px;
+      width: 30px;
+      height: 30px;
+      border-radius: 50%;
+      position: relative;
+    }
+
+    .header-icon img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+    .header-icon:before {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      font-size: 20px;
+      color: white;
+    }
+
+    .header-icon[data-tooltip]::after {
+      content: attr(data-tooltip);
+      position: absolute;
+      bottom: -30px;
+      left: 50%;
+      transform: translateX(-50%);
+      background-color: black;
+      color: white;
+      padding: 5px 10px;
+      border-radius: 5px;
+      white-space: nowrap;
+      opacity: 0;
+      visibility: hidden;
+      transition: opacity 0.3s ease, visibility 0.3s ease;
+    }
+
+    .header-icon[data-tooltip]:hover::after {
+      opacity: 1;
+      visibility: visible;
+    }
+
+    .container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      box-sizing: border-box;
+    }
+
+    .box {
+  background-color: #eaeaea;
+  border-radius: 10px;
+  padding: 40px;
+  margin-bottom: 40px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  width: 80%;
+  max-width: 600px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.box .logo {
+  margin-right: 10px;
+}
+    .box:nth-child(1) {
+      background-color: #EE2E31;
+    }
+    .box:nth-child(2) {
+      background-color: #679289;
+    }
+    .box:nth-child(3) {
+      background-color: #1D7874;
+    }
+
+    @media only screen and (max-width: 600px) {
+      .box {
+        width: 90%;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="header">
+    <div class="header-content">
+      <!-- <img class="header-logo" src="https://elinux.org/images/c/cb/Raspberry_Pi_Logo.svg" alt="Logo1"> -->
+      <span class="header-text">Jässin Aouani</span>
+      <div class="header-icon" data-tooltip="My Website/Resumee">
+        <a href="https://jassin.aouani.de"><img src="images/jassin.ico"></a>
+      </div>
+      <div class="header-icon" data-tooltip="The Genshin Gaugedle">
+        <a href="https://gaugedle.jassin.aouani.de"><img src="images/gauge.ico"></a>
+      </div>      
+    </div>
+  </div>
+  <div class="container">
+    <div class="box">
+      <!-- <img class="logo" src="https://elinux.org/images/c/cb/Raspberry_Pi_Logo.svg"> -->
+      <img class="logo" src="https://elinux.org/images/c/cb/Raspberry_Pi_Logo.svg" alt="Logo" width="50" height="auto">
+      <span>Welcome to my Raspberry Pi! This is the place where I host my projects.</span>
+    </div>
+    <div class="box">
+      <p>API: script.aouani.de/api</p>
+    </div>
+    <div class="box">
+      <p>This is a placeholder text.</p>
+    </div>
+  </div>
+</body>
+</html>
+
+
+<!-- https://elinux.org/images/c/cb/Raspberry_Pi_Logo.svg -->
