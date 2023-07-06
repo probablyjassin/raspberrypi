@@ -48,10 +48,10 @@
     }
 
     .header-icon img {
-  width: 100%;
-  height: 100%;
-  object-fit: contain;
-}
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+    }
 
     .header-icon:before {
       position: absolute;
@@ -93,35 +93,64 @@
     }
 
     .box {
-  background-color: #eaeaea;
-  border-radius: 10px;
-  padding: 40px;
-  margin-bottom: 40px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
-  width: 80%;
-  max-width: 600px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-}
+      background-color: #eaeaea;
+      border-radius: 10px;
+      padding: 40px;
+      margin-bottom: 40px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+      width: 80%;
+      max-width: 600px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+    }
 
-.box .logo {
-  margin-right: 10px;
-}
+    .box .logo {
+      margin-right: 10px;
+    }
+
     .box:nth-child(1) {
       background-color: #EE2E31;
     }
+
     .box:nth-child(2) {
       background-color: #679289;
     }
+
     .box:nth-child(3) {
       background-color: #1D7874;
     }
 
     @media only screen and (max-width: 600px) {
+      .header {
+        padding: 40px;
+      }
+
+      .header-logo {
+        height: 60px;
+      }
+
+      .header-text {
+        font-size: 24px;
+      }
+
+      .header-icon {
+        width: 40px;
+        height: 40px;
+      }
+
+      .header-icon img {
+        width: 100%;
+        height: 100%;
+      }
+
+      .container {
+        padding: 20px;
+      }
+
       .box {
-        width: 90%;
+        width: 100%;
       }
     }
   </style>
@@ -154,6 +183,3 @@
   </div>
 </body>
 </html>
-
-
-<!-- https://elinux.org/images/c/cb/Raspberry_Pi_Logo.svg -->
