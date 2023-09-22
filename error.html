@@ -6,10 +6,15 @@
     <title>Temporarily offline - 502 Bad Gateway</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    
     <style>
+        @import url('https://fonts.cdnfonts.com/css/youtube-sans');
         /* Custom CSS for the error page */
         body {
-            background-color: rgb(25, 25, 25);
+            font-family: 'YouTube Sans', sans-serif;
+            font-family: 'YouTube Sans Dark', sans-serif;
+
+            background-color: #282728;
             color: whitesmoke;
             display: flex;
             align-items: center;
@@ -32,7 +37,7 @@
         }
         .error-container {
             text-align: center;
-            background-color: red; /* Set the background to red */
+            background-color: #9706c8; /* Set the background to red */
             border-radius: 5px;
             box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
             display: inline-block; /* Make it inline-block to be as large as the content */
@@ -42,13 +47,15 @@
             text-align: center;
             padding: 30px;
             border-radius: 5px;
-            background-color: #4a4444;
+            background-color: #2e2f2e;
             box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
         }
         /* Style the topmost h1 heading */
         h1:first-child {
-            border: 2px solid red; /* Add a border around the text */
             padding: 10px;
+        }
+        .btn-primary {
+            background-color: #77afbc !important;
         }
     </style>
 </head>
