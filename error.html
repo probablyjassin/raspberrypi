@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Temporarily offline - 502 Bad Gateway</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        /* Custom CSS for the error page */
+        body {
+            background-color: rgb(25, 25, 25);
+            color: whitesmoke;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            position: relative;
+            min-height: 100vh;
+            margin: 0;
+            padding: 0;
+        }
+        footer {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 10px;
+        }
+        .error-container {
+            text-align: center;
+            background-color: red; /* Set the background to red */
+            border-radius: 5px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            display: inline-block; /* Make it inline-block to be as large as the content */
+            padding: 10px; /* Adjust padding to your preference */
+        }
+        .error-container2 {
+            text-align: center;
+            padding: 30px;
+            border-radius: 5px;
+            background-color: #4a4444;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        /* Style the topmost h1 heading */
+        h1:first-child {
+            border: 2px solid red; /* Add a border around the text */
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container error-container2">
+    <div class="container error-container">
+        <h1 class="display-4">server offline</h1>
+        <p class="lead">502 Bad Gateway</p>
+    </div>
+        <p>The server is temporarily offline, please try again later.</p>
+        <a onclick="back()" class="btn btn-primary">Go Back</a>
+    </div>
+
+    <footer>
+        <a href="https://github.com/probablyjassin" target="_blank">
+            <i class="fab fa-github"></i> Jässin Aouani
+        </a>
+    </footer>
+
+    <script>
+        function back() {
+            window.history.back()
+        }
+    </script>
+
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
